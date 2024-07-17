@@ -10,7 +10,7 @@ const ComponentLayout = ({
   children: React.ReactNode;
 }) => {
   return (
-    <Style.LayoutContainer>
+    <Style.LayoutContainer $bgColor={bgColor}>
       <Style.TitleContainer>
         <h1>{title}</h1>
       </Style.TitleContainer>

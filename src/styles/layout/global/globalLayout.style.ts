@@ -7,7 +7,6 @@ const OuterLayout = styled.div`
 
 const InnerLayout = styled.div`
   width: 100%;
-  max-width: 1200px;
 `;
 
 export default { OuterLayout, InnerLayout };

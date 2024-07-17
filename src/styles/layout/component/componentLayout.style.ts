@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
-const LayoutContainer = styled.div`
+const LayoutContainer = styled.section<{ $bgColor: string }>`
   padding: 6rem 2rem;
+  background-color: ${(props) => props.$bgColor};
 `;
 
 const TitleContainer = styled.div`
