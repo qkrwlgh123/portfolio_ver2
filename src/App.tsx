@@ -1,12 +1,12 @@
 import AboutMe from "./components/aboutMe/aboutMe";
-import Skill from "./components/skill/skill";
+import Skills from "./components/skills/skills";
 import GlobalLayout from "./styles/layout/global/globalLayout";
 
 const App = () => {
   return (
     <GlobalLayout>
       <AboutMe />
-      <Skill />
+      <Skills />
     </GlobalLayout>
   );
 };

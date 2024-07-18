@@ -11,4 +11,14 @@ const SkillsListContainer = styled.div`
   gap: 2rem;
 `;
 
-export default { SkillsContentsContainer, SkillsListContainer };
+const SkillsComponentsBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+`;
+
+export default {
+  SkillsContentsContainer,
+  SkillsListContainer,
+  SkillsComponentsBox,
+};
