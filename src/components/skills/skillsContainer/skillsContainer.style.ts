@@ -18,4 +18,22 @@ const Title = styled.span`
   margin-bottom: 1rem;
 `;
 
-export default { Container, Title };
+const SmallSkillsListContainer = styled.div`
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  width: 280px;
+`;
+
+const SkillsListContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+`;
+
+export default {
+  Container,
+  Title,
+  SmallSkillsListContainer,
+  SkillsListContainer,
+};

@@ -1,7 +1,10 @@
 import { backendSkillsList } from "../../data/skills/backendList";
 import { communitySkillsList } from "../../data/skills/communityList";
 import { deploymentSkillsList } from "../../data/skills/deploymentList";
-import { frontendsmallSkillsList } from "../../data/skills/frontendList";
+import {
+  frontendSkillsList,
+  frontendsmallSkillsList,
+} from "../../data/skills/frontendList";
 import ComponentLayout from "../../styles/layout/component/componentLayout";
 import Style from "./skills.style";
 import SkillsContainer from "./skillsContainer/skillsContainer";
@@ -15,7 +18,7 @@ const Skills = () => {
             <SkillsContainer
               title="FrontEnd"
               smallSkillList={frontendsmallSkillsList}
-              skillList={[]}
+              skillList={frontendSkillsList}
             />
           </Style.SkillsComponentsBox>
 

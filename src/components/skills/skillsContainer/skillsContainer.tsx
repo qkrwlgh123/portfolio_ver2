@@ -17,15 +17,17 @@ const SkillsContainer = ({
       <Style.Title>{title}</Style.Title>
       <div>
         {title === "FrontEnd" && (
-          <div>
+          <Style.SmallSkillsListContainer>
             {smallSkillList?.map((skill) => (
               <SmallSkillComponent key={skill.value} image={skill.image} />
             ))}
-          </div>
+          </Style.SmallSkillsListContainer>
         )}
-        {skillList.map((skill) => (
-          <SkillComponent key={skill.value} image={skill.image} />
-        ))}
+        <Style.SkillsListContainer>
+          {skillList.map((skill) => (
+            <SkillComponent key={skill.value} image={skill.image} />
+          ))}
+        </Style.SkillsListContainer>
         {title === "Backend" && (
           <div>
             {smallSkillList?.map((skill) => (
