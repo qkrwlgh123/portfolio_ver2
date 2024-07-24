@@ -1,8 +1,8 @@
-import NodejsImage from "../../asset/image/skills/files/backend/nodejs.png";
-import ExpressImage from "../../asset/image/skills/files/backend/express.png";
-import SequelizeImage from "../../asset/image/skills/files/backend/sequlieze.png";
-import PrismaImage from "../../asset/image/skills/files/backend/prisma.png";
-import PostgreImage from "../../asset/image/skills/files/backend/postgresql.png";
+import NodejsImage from "../../asset/image/skills/backend/nodejs.png";
+import ExpressImage from "../../asset/image/skills/backend/express.png";
+import SequelizeImage from "../../asset/image/skills/backend/sequlieze.png";
+import PrismaImage from "../../asset/image/skills/backend/prisma.png";
+import PostgreImage from "../../asset/image/skills/backend/postgresql.png";
 
 export const backendSkillsList = [
   { value: "nodejs", image: NodejsImage },

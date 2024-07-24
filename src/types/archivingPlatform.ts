@@ -1,5 +1,5 @@
 export interface ArchivingPlatformInterface {
-  title: string;
+  image: string;
   link?: string;
   subtitle: string;
   description: string[];

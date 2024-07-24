@@ -2,16 +2,24 @@ import { ArchivingPlatformInterface } from "../../../types/archivingPlatform";
 import Style from "./platformComponent.style";
 
 const PlatformComponent = ({
-  title,
+  image,
   link,
   subtitle,
   description,
 }: ArchivingPlatformInterface) => {
   return (
-    <Style.ConponentContainer>
-      <h4>{title}</h4>
+    <Style.ConponentContainer
+      onClick={() => {
+        if (link) window.open(link, "_blank");
+      }}
+    >
+      <Style.ImageBox>
+        <img src={image} />
+      </Style.ImageBox>
       <Style.LinkTextBox>
-        <a href={link}>{link}</a>
+        <a href={link} target="_blank">
+          {link}
+        </a>
       </Style.LinkTextBox>
       <Style.SubtitleBox>
         <span>{subtitle}</span>

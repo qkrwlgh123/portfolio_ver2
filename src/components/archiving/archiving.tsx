@@ -7,17 +7,19 @@ import PlatformComponent from "./platformComponent/platformComponent";
 const Archiving = () => {
   return (
     <ComponentLayout title="ARCHIVING" bgColor="#212529" isWhiteTitle={true}>
-      <Style.ArchivingListContainer>
-        {dataList.map((data: ArchivingPlatformInterface) => (
-          <PlatformComponent
-            key={data.title}
-            title={data.title}
-            link={data.link ? data.link : ""}
-            subtitle={data.subtitle}
-            description={data.description}
-          />
-        ))}
-      </Style.ArchivingListContainer>
+      <Style.ArchivinContentsContainer>
+        <Style.ArchivingListContainer>
+          {dataList.map((data: ArchivingPlatformInterface) => (
+            <PlatformComponent
+              key={data.image}
+              image={data.image}
+              link={data.link ? data.link : ""}
+              subtitle={data.subtitle}
+              description={data.description}
+            />
+          ))}
+        </Style.ArchivingListContainer>
+      </Style.ArchivinContentsContainer>
     </ComponentLayout>
   );
 };
