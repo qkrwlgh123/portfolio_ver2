@@ -1,17 +1,13 @@
 import Style from "./projectDescriptions.style";
 
-const ProjectDescriptons = () => {
+const ProjectDescriptons = ({ descriptions }: { descriptions: string[] }) => {
   return (
     <Style.DescriptionsContainer>
-      <div>
-        <p>이거슨 설명단락 1</p>
-      </div>
-      <div>
-        <p>이거슨 설명단락 2</p>
-      </div>
-      <div>
-        <p>이거슨 설명단락 3</p>
-      </div>
+      {descriptions.map((description) => (
+        <div key={description}>
+          <p>{description}</p>
+        </div>
+      ))}
     </Style.DescriptionsContainer>
   );
 };

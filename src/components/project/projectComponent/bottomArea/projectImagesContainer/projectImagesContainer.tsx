@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "./swiper.css";
 
-const ProjectImagesContainer = () => {
+const ProjectImagesContainer = ({ imageList }: { imageList?: string[] }) => {
   return (
     <Style.ImagesContainer>
       <Swiper
@@ -26,6 +26,12 @@ const ProjectImagesContainer = () => {
         <SwiperSlide>Slide 2</SwiperSlide>
         <SwiperSlide>Slide 3</SwiperSlide>
         <SwiperSlide>Slide 4</SwiperSlide>
+
+        {imageList?.map((image) => (
+          <SwiperSlide key={image}>
+            <img src={image} />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </Style.ImagesContainer>
   );
