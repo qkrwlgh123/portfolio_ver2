@@ -6,7 +6,7 @@ export const dataList = [
     descriptions: ["테스트 설명1", "테스트 설명2"],
     stacksInfos: {
       mainFeature: ["테스트 기능1", "테스트 기능2"],
-      URL: "테스트URL",
+      URLs: ["테스트 URL1", "테스트 URL2"],
       stacksList: ["테스트 스택1", "테스트 스택2"],
     },
   },

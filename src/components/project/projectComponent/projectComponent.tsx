@@ -13,7 +13,7 @@ const ProjectComponent = ({
   date: string;
   imageList?: string[];
   descriptions: string[];
-  stacksInfos?: { mainFeature: string[]; URL: string; stacksList: string[] };
+  stacksInfos?: { mainFeature: string[]; URLs: string[]; stacksList: string[] };
 }) => {
   return (
     <Style.ComponentContainer>

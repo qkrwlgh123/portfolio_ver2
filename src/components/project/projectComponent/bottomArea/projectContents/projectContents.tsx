@@ -7,7 +7,7 @@ const ProjectContents = ({
   stacksInfos,
 }: {
   descriptions: string[];
-  stacksInfos?: { mainFeature: string[]; URL: string; stacksList: string[] };
+  stacksInfos?: { mainFeature: string[]; URLs: string[]; stacksList: string[] };
 }) => {
   return (
     <Style.ContentsContainer>
