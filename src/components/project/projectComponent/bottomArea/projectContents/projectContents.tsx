@@ -1,3 +1,4 @@
+import { StackInfoInterface } from "../../../../../types/project";
 import Style from "./projectContents.style";
 import ProjectDescriptons from "./projectDescriptions/projectDescriptions";
 import ProjectStackInfos from "./projectStackInfos/projectStackInfos";
@@ -7,7 +8,7 @@ const ProjectContents = ({
   stacksInfos,
 }: {
   descriptions: string[];
-  stacksInfos?: { mainFeature: string[]; URLs: string[]; stacksList: string[] };
+  stacksInfos: StackInfoInterface;
 }) => {
   return (
     <Style.ContentsContainer>

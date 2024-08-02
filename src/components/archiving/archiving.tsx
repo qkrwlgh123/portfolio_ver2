@@ -9,13 +9,10 @@ const Archiving = () => {
     <ComponentLayout title="ARCHIVING" bgColor="#212529" isWhiteTitle={true}>
       <Style.ArchivinContentsContainer>
         <Style.ArchivingListContainer>
-          {dataList.map((data: ArchivingPlatformInterface) => (
+          {dataList.map((archivingData: ArchivingPlatformInterface) => (
             <PlatformComponent
-              key={data.image}
-              image={data.image}
-              link={data.link ? data.link : ""}
-              subtitle={data.subtitle}
-              description={data.description}
+              key={archivingData.image}
+              platformComponent={{ ...archivingData }}
             />
           ))}
         </Style.ArchivingListContainer>

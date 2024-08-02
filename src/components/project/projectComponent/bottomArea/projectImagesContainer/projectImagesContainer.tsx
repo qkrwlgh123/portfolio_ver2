@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "./swiper.css";
 
-const ProjectImagesContainer = ({ imageList }: { imageList?: string[] }) => {
+const ProjectImagesContainer = ({ imageList }: { imageList: string[] }) => {
   return (
     <Style.ImagesContainer>
       <Swiper
@@ -19,10 +19,8 @@ const ProjectImagesContainer = ({ imageList }: { imageList?: string[] }) => {
         navigation
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
-        onSwiper={(swiper: any) => console.log(swiper)}
-        onSlideChange={() => console.log("slide change")}
       >
-        {imageList?.map((image) => (
+        {imageList.map((image) => (
           <SwiperSlide key={image}>
             <img src={image} />
           </SwiperSlide>

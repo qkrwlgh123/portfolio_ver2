@@ -1,9 +1,10 @@
+import { StackInfoInterface } from "../../../../../../types/project";
 import Style from "./projectStackInfos.style";
 
 const ProjectStackInfos = ({
   stacksInfos,
 }: {
-  stacksInfos?: { mainFeature: string[]; URLs: string[]; stacksList: string[] };
+  stacksInfos: StackInfoInterface;
 }) => {
   return (
     <Style.StacksInfosContainer>
@@ -12,7 +13,7 @@ const ProjectStackInfos = ({
           <span>주요 기능</span>
         </Style.SubtitleBox>
 
-        {stacksInfos?.mainFeature.map((feature) => (
+        {stacksInfos.mainFeature.map((feature) => (
           <span key={feature}>{feature}</span>
         ))}
       </Style.StackInfoBox>
@@ -21,7 +22,7 @@ const ProjectStackInfos = ({
           <span>URL</span>
         </Style.SubtitleBox>
         <Style.LinkListContainer>
-          {stacksInfos?.URLs.map((url) => (
+          {stacksInfos.URLs.map((url) => (
             <Style.LinkText key={url} href={url} target="_blank">
               {url}
             </Style.LinkText>
@@ -34,7 +35,7 @@ const ProjectStackInfos = ({
           <span>기술 스택</span>
         </Style.SubtitleBox>
 
-        {stacksInfos?.stacksList.map((stack) => (
+        {stacksInfos.stacksList.map((stack) => (
           <Style.TeckStack key={stack}>{stack}</Style.TeckStack>
         ))}
       </Style.StackInfoBox>

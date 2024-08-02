@@ -1,32 +1,25 @@
 import Style from "./projectComponent.style";
 import ProjectImagesContainer from "./bottomArea/projectImagesContainer/projectImagesContainer";
 import ProjectContents from "./bottomArea/projectContents/projectContents";
+import { ProjectComponentInterface } from "../../../types/project";
 
 const ProjectComponent = ({
-  title,
-  date,
-  imageList,
-  descriptions,
-  stacksInfos,
+  project,
 }: {
-  title: string;
-  date: string;
-  imageList?: string[];
-  descriptions: string[];
-  stacksInfos?: { mainFeature: string[]; URLs: string[]; stacksList: string[] };
+  project: ProjectComponentInterface;
 }) => {
   return (
     <Style.ComponentContainer>
       <Style.TitleInfoBox>
-        <h1>{title}</h1>
-        <span>{date}</span>
+        <h1>{project.title}</h1>
+        <span>{project.date}</span>
       </Style.TitleInfoBox>
 
       <Style.BottomAreaContainer>
-        <ProjectImagesContainer imageList={imageList} />
+        <ProjectImagesContainer imageList={project.imageList} />
         <ProjectContents
-          descriptions={descriptions}
-          stacksInfos={stacksInfos}
+          descriptions={project.descriptions}
+          stacksInfos={project.stackInfos}
         />
       </Style.BottomAreaContainer>
     </Style.ComponentContainer>
