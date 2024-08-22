@@ -1,3 +1,4 @@
+import { ForwardedRef, forwardRef } from "react";
 import { backendSkillsList } from "../../data/skills/backendList";
 import { communitySkillsList } from "../../data/skills/communityList";
 import { deploymentSkillsList } from "../../data/skills/deploymentList";
@@ -9,9 +10,9 @@ import ComponentLayout from "../../styles/layout/component/componentLayout";
 import Style from "./skills.style";
 import SkillsContainer from "./skillsContainer/skillsContainer";
 
-const Skills = () => {
+const Skills = forwardRef((props, ref: ForwardedRef<HTMLDivElement>) => {
   return (
-    <ComponentLayout title="SKILLS" bgColor="#ffc107">
+    <ComponentLayout title="SKILLS" bgColor="#ffc107" ref={ref}>
       <Style.SkillsContentsContainer>
         <Style.SkillsListContainer>
           <Style.SkillsComponentsBox>
@@ -44,6 +45,6 @@ const Skills = () => {
       </Style.SkillsContentsContainer>
     </ComponentLayout>
   );
-};
+});
 
 export default Skills;

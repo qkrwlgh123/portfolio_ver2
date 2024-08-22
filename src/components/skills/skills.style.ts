@@ -9,6 +9,10 @@ const SkillsContentsContainer = styled.div`
 const SkillsListContainer = styled.div`
   display: flex;
   gap: 2rem;
+
+  @media (max-width: 1199px) {
+    flex-direction: column;
+  }
 `;
 
 const SkillsComponentsBox = styled.div`
