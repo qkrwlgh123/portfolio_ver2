@@ -9,9 +9,15 @@ const Container = styled.div`
 
   h3 {
     font-size: 2rem;
-    font-weight: normal;
+    font-weight: 500;
     border-bottom: 2px solid #cccccc;
     width: fit-content;
+  }
+
+  @media (max-width: 799px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
   }
 `;
 
@@ -27,7 +33,7 @@ const ContentBox = styled.div`
 
 const ContentText = styled.span`
   font-size: 1.25rem;
-  font-weight: normal;
+  font-weight: 500;
 `;
 
 const CenterContentBox = styled(ContentBox)`

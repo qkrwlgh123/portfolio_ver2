@@ -1,9 +1,10 @@
+import { ForwardedRef, forwardRef } from "react";
 import ComponentLayout from "../../styles/layout/component/componentLayout";
 import Style from "./aboutMe.style";
 
-const AboutMe = () => {
+const AboutMe = forwardRef((props, ref: ForwardedRef<HTMLDivElement>) => {
   return (
-    <ComponentLayout title="ABOUT ME" bgColor="#ffffff">
+    <ComponentLayout title="ABOUT ME" bgColor="#ffffff" ref={ref}>
       <Style.Container>
         <Style.ContentBox>
           <h3>이름</h3>
@@ -21,6 +22,6 @@ const AboutMe = () => {
       </Style.Container>
     </ComponentLayout>
   );
-};
+});
 
 export default AboutMe;
