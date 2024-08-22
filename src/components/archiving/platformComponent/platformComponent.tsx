@@ -13,7 +13,7 @@ const PlatformComponent = ({
           window.open(platformComponent.link, "_blank");
       }}
     >
-      <Style.ImageBox>
+      <Style.ImageBox $isVelogImage={platformComponent.image.endsWith("svg")}>
         <img src={platformComponent.image} />
       </Style.ImageBox>
       <Style.LinkTextBox>

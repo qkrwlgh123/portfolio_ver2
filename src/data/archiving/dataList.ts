@@ -1,5 +1,5 @@
 import GithubImage from "../../asset/image/archiving/github.png";
-import VelogImage from "../../asset/image//archiving/velog.png";
+import VelogImage from "../../asset/image//archiving/velog.svg";
 
 export const dataList = [
   {

@@ -1,37 +1,47 @@
 import styled from "styled-components";
 
 const ConponentContainer = styled.div`
-  width: 30%;
-  padding: 3rem;
+  width: 350px;
+  height: 350px;
+
+  padding: 2rem;
+
   background-color: #f5f5f5;
+
   border-radius: 1rem;
+
   display: flex;
   flex-direction: column;
-  cursor: pointer;
 
-  h4 {
-    font-size: 45px;
-  }
+  cursor: pointer;
 
   a {
     color: #258ddb;
   }
 
-  * {
-    font-size: 15px;
-  }
+  transition: scale 0.2s ease;
 
-  transition: all 0.2s ease;
   &:hover {
     scale: 1.1;
   }
+
+  @media (max-width: 1199px) {
+    width: 100%;
+    max-width: 500px;
+  }
 `;
 
-const ImageBox = styled.div`
-  width: 20rem;
-  margin-left: -2.25rem;
+const ImageBox = styled.div<{ $isVelogImage: boolean }>`
+  width: 14rem;
+  height: 75px;
+
+  margin-left: ${(props) => (props.$isVelogImage ? "-3rem;" : "-1.8rem;")};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   img {
-    width: 100%;
+    width: ${(props) => (props.$isVelogImage ? "55%" : "100%")};
   }
 `;
 
@@ -40,18 +50,19 @@ const LinkTextBox = styled.div`
 `;
 
 const SubtitleBox = styled.div`
-  font-weight: bold;
+  margin-top: -1rem;
+  font-weight: 500;
 `;
 
 const DescriptionsContainer = styled.ul`
   padding-left: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.5rem;
   margin: 1em 0;
 
-  word-wrap: break-word; /* 추가된 부분 */
-  overflow-wrap: break-word; /* 추가된 부분 */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 `;
 
 export default {

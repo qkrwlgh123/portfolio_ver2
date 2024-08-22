@@ -10,10 +10,18 @@ const ArchivingListContainer = styled.div`
   display: flex;
 
   margin-top: 3rem;
-  gap: 5.5rem;
+  gap: 4rem;
   justify-content: center;
 
   width: 70%;
+
+  @media (max-width: 1199px) {
+    flex-direction: column;
+    align-items: center;
+
+    gap: 4rem;
+    width: 100%;
+  }
 `;
 
 export default { ArchivinContentsContainer, ArchivingListContainer };
