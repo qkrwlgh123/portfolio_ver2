@@ -8,6 +8,7 @@ const GlobalStyle = createGlobalStyle`
 
     * {
         box-sizing: border-box;
+        font-family: 'Apple SD Gothic neo';
     }
 
     html, body, div, span, h1, h2, h3, h4, h5, h6, p, 
@@ -15,15 +16,15 @@ const GlobalStyle = createGlobalStyle`
         margin: 0;
         padding: 0;
         border: 0;
-        font-size: 10px;
+        font-size: 16px;
         vertical-align: baseline;
     }
     
     body {
         line-height: 1.2;
-        font-family: 'Noto Sans KR', sans-serif;
+     
         background-color: #F6F9F0;
-        margin-bottom: 100px;
+        /* margin-bottom: 100px; */
     }
 
     ol, ul{ 
