@@ -6,6 +6,8 @@ const ContentsContainer = styled.div`
   align-items: center;
 
   margin-top: 3rem;
+
+  gap: 4rem;
 `;
 
 export default { ContentsContainer };

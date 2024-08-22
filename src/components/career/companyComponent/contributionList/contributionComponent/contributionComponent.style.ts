@@ -8,26 +8,26 @@ const Container = styled.div`
 
 const TitleContainer = styled.div`
   h2 {
-    font-size: 1.7rem;
-    font-weight: bold;
+    font-size: 1.2rem;
+    font-weight: 600;
   }
 `;
 
 const DateContainer = styled.div`
   span {
     color: #6c757d;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
 `;
 
 const DescriptionsContainer = styled.ul`
-  padding-left: 1.2rem;
+  padding-left: 1rem;
 
   li {
     margin-bottom: 0.5rem;
-  }
-  li span {
-    font-size: 1.4rem;
+    white-space: pre-wrap;
+    line-height: 1.35;
+    font-weight: 500;
   }
 `;
 
