@@ -12,10 +12,14 @@ const ProjectStackInfos = ({
         <Style.SubtitleBox>
           <span>주요 기능</span>
         </Style.SubtitleBox>
-
-        {stacksInfos.mainFeature.map((feature) => (
-          <span key={feature}>{feature}</span>
-        ))}
+        <Style.MainFeatureList>
+          {stacksInfos.mainFeature.map((feature, index) => (
+            <span key={feature}>
+              {feature}
+              {index < stacksInfos.mainFeature.length - 1 && ","}&nbsp;
+            </span>
+          ))}
+        </Style.MainFeatureList>
       </Style.StackInfoBox>
       <Style.StackInfoBox>
         <Style.SubtitleBox>
@@ -35,9 +39,11 @@ const ProjectStackInfos = ({
           <span>기술 스택</span>
         </Style.SubtitleBox>
 
-        {stacksInfos.stacksList.map((stack) => (
-          <Style.TeckStack key={stack}>{stack}</Style.TeckStack>
-        ))}
+        <Style.TeckStackList>
+          {stacksInfos.stacksList.map((stack) => (
+            <Style.TechStack key={stack}>{stack}</Style.TechStack>
+          ))}
+        </Style.TeckStackList>
       </Style.StackInfoBox>
     </Style.StacksInfosContainer>
   );

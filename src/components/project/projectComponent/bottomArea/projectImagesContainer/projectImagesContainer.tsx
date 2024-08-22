@@ -6,7 +6,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import "swiper/css/scrollbar";
 import "./swiper.css";
 
 const ProjectImagesContainer = ({ imageList }: { imageList: string[] }) => {
@@ -18,7 +17,6 @@ const ProjectImagesContainer = ({ imageList }: { imageList: string[] }) => {
         autoplay={{ delay: 5000 }}
         navigation
         pagination={{ clickable: true }}
-        scrollbar={{ draggable: true }}
       >
         {imageList.map((image) => (
           <SwiperSlide key={image}>

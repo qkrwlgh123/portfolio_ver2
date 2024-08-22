@@ -1,7 +1,84 @@
-.swiper {
-  height: 100%;
+.swiper-wrapper {
+  width: 100%;
 }
 
 .swiper-slide {
-  width: 100% !important;
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  border: 0.1px solid transparent;
+
+  padding-top: 100%;
+
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.swiper-slide img {
+  position: absolute;
+  width: 85%;
+  height: 85%;
+
+  top: 0;
+  left: 10%;
+
+  object-fit: cover;
+}
+
+@media (max-width: 799px) {
+  .swiper-slide img {
+    width: 100%;
+    height: 100%;
+
+    left: 0;
+
+    object-fit: cover;
+  }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 15px;
+  height: 15px;
+
+  top: 45%;
+}
+
+.swiper-button-prev {
+  left: 5%;
+}
+
+@media (max-width: 799px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 55%;
+  }
+}
+
+@media (max-width: 799px) {
+  .swiper-button-prev {
+    left: 0%;
+  }
+}
+
+.swiper-button-next {
+  right: 0;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 28px;
+}
+
+.swiper-pagination {
+  bottom: 10% !important;
+  left: 3% !important;
+}
+
+@media (max-width: 799px) {
+  .swiper-pagination {
+    left: 0 !important;
+    bottom: 2% !important;
+  }
 }

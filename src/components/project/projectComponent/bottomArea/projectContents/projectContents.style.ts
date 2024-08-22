@@ -1,16 +1,14 @@
 import styled from "styled-components";
 
 const ContentsContainer = styled.div`
-  width: 52%;
+  width: 50%;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
-  height: 500px;
-
-  * {
-    font-size: 16px;
+  @media (max-width: 799px) {
+    width: 100%;
   }
 `;
 
