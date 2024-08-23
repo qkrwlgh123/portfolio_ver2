@@ -49,7 +49,10 @@ const App = () => {
   return (
     <GlobalLayout>
       <Header headerBgColor={headerBgColor} moveToComponent={moveToComponent} />
-      <Intro ref={(el: HTMLDivElement) => (divRefArr.current![0] = el)} />
+      <Intro
+        ref={(el: HTMLDivElement) => (divRefArr.current![0] = el)}
+        moveToComponent={moveToComponent}
+      />
       <AboutMe ref={(el: HTMLDivElement) => (divRefArr.current![1] = el)} />
       <Skills ref={(el: HTMLDivElement) => (divRefArr.current![2] = el)} />
       <Archiving ref={(el: HTMLDivElement) => (divRefArr.current![3] = el)} />

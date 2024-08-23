@@ -8,23 +8,16 @@ const ComponentLayout = forwardRef(
       bgColor,
       children,
       isWhiteTitle,
-      isNoPadding,
     }: {
       title: string;
       bgColor: string;
       children: React.ReactNode;
       isWhiteTitle?: boolean;
-      isNoPadding?: boolean;
     },
     ref: ForwardedRef<HTMLDivElement>
   ) => {
     return (
-      <Style.LayoutContainer
-        $bgColor={bgColor}
-        $isNoPadding={isNoPadding}
-        {...(isNoPadding && { $isNoPadding: isNoPadding })}
-        ref={ref}
-      >
+      <Style.LayoutContainer $bgColor={bgColor} ref={ref}>
         <Style.TitleContainer
           {...(isWhiteTitle && { $isWhiteTitle: isWhiteTitle })}
         >

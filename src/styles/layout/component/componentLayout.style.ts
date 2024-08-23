@@ -2,17 +2,9 @@ import styled from "styled-components";
 
 const LayoutContainer = styled.section<{
   $bgColor: string;
-  $isNoPadding?: boolean;
 }>`
-  /* padding: 6rem 2rem; */
-  ${(props) =>
-    props.$isNoPadding
-      ? `
-       padding: 0;
-      `
-      : `
-       padding: 6rem 2rem; 
-      `}
+  padding: 6rem 2rem;
+
   background-color: ${(props) => props.$bgColor};
 `;
 

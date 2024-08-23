@@ -24,8 +24,8 @@ const GlobalStyle = createGlobalStyle`
         line-height: 1.2;
      
         background-color: #F6F9F0;
-        /* margin-bottom: 100px; */
     }
+
 
     ol, ul{ 
         list-style: none;
