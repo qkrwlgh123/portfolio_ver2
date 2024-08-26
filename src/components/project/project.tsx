@@ -16,14 +16,7 @@ const Project = forwardRef((props, ref: ForwardedRef<HTMLDivElement>) => {
     >
       <Style.ContentsContainer>
         {dataList.map((project: ProjectComponentInterface) => (
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5, duration: 0.3 }}
-            viewport={{ once: true }}
-          >
-            <ProjectComponent key={project.title} project={{ ...project }} />
-          </motion.div>
+          <ProjectComponent key={project.title} project={{ ...project }} />
         ))}
       </Style.ContentsContainer>
     </ComponentLayout>

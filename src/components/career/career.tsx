@@ -11,17 +11,10 @@ const Career = forwardRef((props, ref: ForwardedRef<HTMLDivElement>) => {
     <ComponentLayout title="CAREER" bgColor="#f5f5f5" ref={ref}>
       <Style.ContentsContainer>
         {dataList.map((companyData: CompanyComponentInterface) => (
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5, duration: 0.3 }}
-            viewport={{ once: true }}
-          >
-            <CompanyComponent
-              key={companyData.title}
-              companyData={{ ...companyData }}
-            />
-          </motion.div>
+          <CompanyComponent
+            key={companyData.title}
+            companyData={{ ...companyData }}
+          />
         ))}
       </Style.ContentsContainer>
     </ComponentLayout>

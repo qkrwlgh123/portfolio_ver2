@@ -9,7 +9,12 @@ const ProjectComponent = ({
   project: ProjectComponentInterface;
 }) => {
   return (
-    <Style.ComponentContainer>
+    <Style.ComponentContainer
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.5, duration: 0.3 }}
+      viewport={{ once: true }}
+    >
       <Style.TitleInfoBox>
         <h1>{project.title}</h1>
         <span>{project.date}</span>
