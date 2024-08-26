@@ -1,23 +1,67 @@
-import StarterValleyHomeImage from "../../asset/image/project/starterValley/starterValley_home.png";
-import StarterValleySuccessImage from "../../asset/image/project/starterValley/starterValley_success.png";
-import StarterValleyShopListImage from "../../asset/image/project/starterValley/starterValley_shopList.png";
-import StarterValleyShopInfoImage from "../../asset/image/project/starterValley/starterValley_shopInfo.png";
-import StarterValleyLunchBusImage from "../../asset/image/project/starterValley/startValley_lunchBus.png";
-import StarterValleyTalkToManagerImage from "../../asset/image/project/starterValley/starterValley_talkToManager.png";
-import StarterValleyManageTeamImage from "../../asset/image/project/starterValley/starterVallery_manageTeam.png";
+import PortfolioImage_1 from "../../asset/image/project/portfolio/portFolioImage_1.png";
+import PortfolioImage_2 from "../../asset/image/project/portfolio/portFolioImage_2.png";
+import PortfolioImage_3 from "../../asset/image/project/portfolio/portFolioImage_3.png";
+import PortfolioImage_4 from "../../asset/image/project/portfolio/portFolioImage_4.png";
 
-import KindDiaryHomeimage from "../../asset/image/project/kindDiary/kindDiary_home.png";
-import KindDiaryNewObjectImage from "../../asset/image/project/kindDiary/kindDiary_newObject.png";
-import KindDiaryNewTodoImage from "../../asset/image/project/kindDiary/kindDiary_newTodo.png";
+import KindDariyImage_1 from "../../asset/image/project/kindDiary/kindDairyImage_1.png";
+import KindDariyImage_2 from "../../asset/image/project/kindDiary/kindDairyImage_2.png";
+import KindDariyImage_3 from "../../asset/image/project/kindDiary/kindDairyImage_3.png";
+import KindDariyImage_4 from "../../asset/image/project/kindDiary/kindDairyImage_4.png";
+import KindDariyImage_5 from "../../asset/image/project/kindDiary/kindDairyImage_5.png";
+
+import StarterValleyImage_1 from "../../asset/image/project/starterValley/StarterValleyImage_1.png";
+import StarterValleyImage_2 from "../../asset/image/project/starterValley/StarterValleyImage_2.png";
+import StarterValleyImage_3 from "../../asset/image/project/starterValley/StarterValleyImage_3.png";
+import StarterValleyImage_4 from "../../asset/image/project/starterValley/StarterValleyImage_4.png";
+import StarterValleyImage_5 from "../../asset/image/project/starterValley/StarterValleyImage_5.png";
+import StarterValleyImage_6 from "../../asset/image/project/starterValley/StarterValleyImage_6.png";
+import StarterValleyImage_7 from "../../asset/image/project/starterValley/StarterValleyImage_7.png";
+import StarterValleyImage_8 from "../../asset/image/project/starterValley/StarterValleyImage_8.png";
 
 export const dataList = [
+  {
+    title: "포트폴리오",
+    date: "2024.07 ~ 2024.08",
+    imageList: [
+      PortfolioImage_1,
+      PortfolioImage_2,
+      PortfolioImage_3,
+      PortfolioImage_4,
+    ],
+    descriptions: [
+      "개인 이력 및 프로젝트 경험을 정리하여 웹으로 구현한 프로젝트입니다.\n지금 보고 계시는 이 웹사이트에 해당합니다.",
+      "Github actions와 Cloudfront의 Invalidation을 활용하여 CI CD를 구축하였습니다.",
+      "CSS의 Position과 Transform 속성을 활용하여 스크롤 애니메이션을 구현하였습니다.",
+      "뷰포트 내 렌더링된 컴포넌트에 Framer-motion을 활용하여 애니메이션을 적용하였고, 이를 통해 높은 퀄리티의 사용자 인터렉션을 제공할 수 있는 좋은 경험이였습니다.",
+    ],
+    stackInfos: {
+      mainFeature: ["포트폴리오"],
+      URLs: [
+        {
+          text: "Github",
+          link: "https://github.com/qkrwlgh123/portfolio_ver2",
+        },
+      ],
+      stacksList: [
+        "React",
+        "TypeScript",
+        "Styled-component",
+        "Framer motion",
+        "S3",
+        "Cloudfront",
+        "Github actions",
+      ],
+    },
+  },
   {
     title: "카인드 다이어리",
     date: "2024.07 ~ 2024.08 (개인 프로젝트)",
     imageList: [
-      KindDiaryHomeimage,
-      KindDiaryNewObjectImage,
-      KindDiaryNewTodoImage,
+      KindDariyImage_1,
+      KindDariyImage_2,
+      KindDariyImage_3,
+      KindDariyImage_4,
+      KindDariyImage_5,
     ],
     descriptions: [
       "개인 일정과 수행해야할 작업들을 기록하고 아카이빙하기 위한 일정 관리 서비스를 개발하였습니다.",
@@ -33,7 +77,20 @@ export const dataList = [
         "해야할 작업 기록 및 체크",
         "주 별 목표 진행도 및 피드백 조회",
       ],
-      URLs: ["https://diary.kindparks.com"],
+      URLs: [
+        {
+          text: "배포 링크",
+          link: "https://diary.kindparks.com",
+        },
+        {
+          text: "Github(Frontend)",
+          link: "https://github.com/qkrwlgh123/kind_dairy",
+        },
+        {
+          text: "Github(Backend)",
+          link: "https://github.com/qkrwlgh123/kind_diary_server",
+        },
+      ],
       stacksList: [
         "React",
         "TypeScript",
@@ -60,17 +117,28 @@ export const dataList = [
         "위치 기반 카페 목록 조회",
         "평점 및 리뷰 작성",
       ],
-      URLs: ["https://roasting.kindparks.com"],
+      URLs: [
+        {
+          text: "배포 링크",
+          link: "https://roasting.kindparks.com",
+        },
+        {
+          text: "Github(Frontend)",
+          link: "https://github.com/qkrwlgh123/roasting-landmark-front",
+        },
+        {
+          text: "Github(Backend)",
+          link: "https://github.com/qkrwlgh123/roasting-backend",
+        },
+      ],
       stacksList: [
         "React",
         "TypeScript",
         "Recoil",
         "Styled-component",
         "Node.js",
-        "S3",
-        "Cloudfront",
         "EC2",
-        "Load-balancer",
+        "Nginx",
       ],
     },
   },
@@ -78,13 +146,14 @@ export const dataList = [
     title: "스타터 밸리",
     date: "2022.11 ~ 2023.01 (팀 프로젝트)",
     imageList: [
-      StarterValleyHomeImage,
-      StarterValleySuccessImage,
-      StarterValleyShopListImage,
-      StarterValleyShopInfoImage,
-      StarterValleyLunchBusImage,
-      StarterValleyTalkToManagerImage,
-      StarterValleyManageTeamImage,
+      StarterValleyImage_1,
+      StarterValleyImage_2,
+      StarterValleyImage_3,
+      StarterValleyImage_4,
+      StarterValleyImage_5,
+      StarterValleyImage_6,
+      StarterValleyImage_7,
+      StarterValleyImage_8,
     ],
     descriptions: [
       "부트캠프 교육생들을 위한 출결 관리 및 정보 공유 플랫폼 서비스 개발에 참여하였습니다.",
@@ -103,7 +172,10 @@ export const dataList = [
         "운영진 건의",
       ],
       URLs: [
-        "https://therapeutic-iridium-a60.notion.site/Attendance-Manager-b16424caf0bf433f99a6041679e5d7b7?pvs=74",
+        {
+          text: "시연 영상",
+          link: "https://therapeutic-iridium-a60.notion.site/Attendance-Manager-b16424caf0bf433f99a6041679e5d7b7?pvs=74",
+        },
       ],
       stacksList: [
         "Next.js",
