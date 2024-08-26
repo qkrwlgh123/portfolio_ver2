@@ -101,14 +101,14 @@ const Intro = forwardRef(
     /** 더 알아보기 버튼 opacity */
     const moreViewButtonOpacity = useTransform(
       scrollYProgress,
-      [0.5, 0.6],
+      [0.4, 0.5],
       [0, 1]
     );
 
     /** 더 알아보기 버튼 translateY */
     const moreVIewButtonTranslateY = useTransform(
       scrollYProgress,
-      [0.5, 0.6],
+      [0.4, 0.5],
       [0, -10]
     );
 
