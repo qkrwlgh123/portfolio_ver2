@@ -27,8 +27,8 @@ const ProjectStackInfos = ({
         </Style.SubtitleBox>
         <Style.LinkListContainer>
           {stacksInfos.URLs.map((url) => (
-            <Style.LinkText key={url} href={url} target="_blank">
-              {url}
+            <Style.LinkText key={url.link} href={url.link} target="_blank">
+              {url.text}
             </Style.LinkText>
           ))}
         </Style.LinkListContainer>

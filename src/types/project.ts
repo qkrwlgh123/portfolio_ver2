@@ -1,6 +1,11 @@
+interface URLInfo {
+  text: string;
+  link: string;
+}
+
 export interface StackInfoInterface {
   mainFeature: string[];
-  URLs: string[];
+  URLs: URLInfo[];
   stacksList: string[];
 }
 
