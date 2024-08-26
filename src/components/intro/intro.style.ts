@@ -52,6 +52,19 @@ const Text = styled(motion.div)<{ $fontSize: number; $fontWeight: number }>`
     font-size: ${(props) => `${props.$fontSize}rem`};
     font-weight: ${(props) => props.$fontWeight};
   }
+
+  @media (max-width: 767px) {
+    span {
+      font-size: ${(props) =>
+        props.$fontSize === 8
+          ? "4rem"
+          : props.$fontSize === 2.5
+          ? "1.5rem"
+          : props.$fontSize === 4
+          ? "3rem"
+          : "1.125rem"};
+    }
+  }
 `;
 
 export default {
