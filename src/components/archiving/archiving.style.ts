@@ -3,7 +3,8 @@ import styled from "styled-components";
 const ArchivinContentsContainer = styled.div`
   width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const ArchivingListContainer = styled.div`
@@ -12,8 +13,6 @@ const ArchivingListContainer = styled.div`
   margin-top: 3rem;
   gap: 4rem;
   justify-content: center;
-
-  width: 70%;
 
   @media (max-width: 1199px) {
     flex-direction: column;
@@ -24,4 +23,7 @@ const ArchivingListContainer = styled.div`
   }
 `;
 
-export default { ArchivinContentsContainer, ArchivingListContainer };
+export default {
+  ArchivinContentsContainer,
+  ArchivingListContainer,
+};

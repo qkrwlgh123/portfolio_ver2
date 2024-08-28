@@ -1,10 +1,11 @@
 import { ForwardedRef, forwardRef } from "react";
-import { dataList } from "../../data/archiving/dataList";
+import { dataList, longDataList } from "../../data/archiving/dataList";
 import ComponentLayout from "../../styles/layout/component/componentLayout";
 import { ArchivingPlatformInterface } from "../../types/archivingPlatform";
 import Style from "./archiving.style";
 import PlatformComponent from "./platformComponent/platformComponent";
 import { motion } from "framer-motion";
+import LongPlatformComponent from "./platformComponent/longPlatformComponent";
 
 const Archiving = forwardRef((props, ref: ForwardedRef<HTMLDivElement>) => {
   return (
@@ -22,12 +23,20 @@ const Archiving = forwardRef((props, ref: ForwardedRef<HTMLDivElement>) => {
       >
         <Style.ArchivinContentsContainer>
           <Style.ArchivingListContainer>
-            {dataList.map((archivingData: ArchivingPlatformInterface) => (
-              <PlatformComponent
-                key={archivingData.image}
-                platformComponent={{ ...archivingData }}
-              />
-            ))}
+            {dataList.map(
+              (archivingData: ArchivingPlatformInterface<string>) => (
+                <PlatformComponent
+                  key={archivingData.image}
+                  platformComponent={{ ...archivingData }}
+                />
+              )
+            )}
+          </Style.ArchivingListContainer>
+          <Style.ArchivingListContainer>
+            <LongPlatformComponent
+              key={longDataList[0].image}
+              platformComponent={{ ...longDataList[0] }}
+            />
           </Style.ArchivingListContainer>
         </Style.ArchivinContentsContainer>
       </motion.div>

@@ -1,5 +1,6 @@
 import GithubImage from "../../asset/image/archiving/github.png";
 import VelogImage from "../../asset/image//archiving/velog.svg";
+import DocumentsImage from "../../asset/image/archiving/documents.png";
 
 export const dataList = [
   {
@@ -19,5 +20,35 @@ export const dataList = [
       "새로 학습한 내용을 정리 및 기록하여 공유",
       "문제 해결 및 해결 과정 정리",
     ],
+  },
+];
+
+export const longDataList = [
+  {
+    image: DocumentsImage,
+    link: [
+      {
+        link: "https://therapeutic-iridium-a60.notion.site/5d4cc7a33f7843f48c77072ae0b1f039?pvs=25",
+        text: "카인드 다이어리 프로젝트 중, 달성률 안내 팝업 기획안",
+      },
+      {
+        link: "https://therapeutic-iridium-a60.notion.site/React-query-API-d7458219729547ebadcdcc6190919535?pvs=25",
+        text: "카인드 다이어리 프로젝트 중, React query 도입 및 리팩토링 계획안",
+      },
+      {
+        link: "https://therapeutic-iridium-a60.notion.site/PPT-cdb764426ef84c51b2f8af1512a3c6fb?pvs=74",
+        text: "웅진씽크빅 재직 당시, 스마트올 중학 및 통합 웹 뷰어 관련 발표 자료",
+      },
+      {
+        link: "https://therapeutic-iridium-a60.notion.site/Zip-viewer-25af5a692c9c48a59e8f3ac5f988749a",
+        text: "(주) 북틀 재직 당시, 웹 뷰어 내 Core 모듈 역할별 분리 작업 발표 자료",
+      },
+      {
+        link: "https://therapeutic-iridium-a60.notion.site/ZIP-NPM-be6c88d82f9e42cc99deb5177589e92e",
+        text: "(주) 북틀 재직 당시, 웹 뷰어 내 Core 모듈 NPM 라이브러리화 발표 자료",
+      },
+    ],
+    subtitle:
+      "기업에서 다양한 프로젝트 및 기술발표, 개인 프로젝트를 진행하며 작성했던 문서 모음",
   },
 ];

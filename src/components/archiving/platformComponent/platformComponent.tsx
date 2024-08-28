@@ -4,10 +4,10 @@ import Style from "./platformComponent.style";
 const PlatformComponent = ({
   platformComponent,
 }: {
-  platformComponent: ArchivingPlatformInterface;
+  platformComponent: ArchivingPlatformInterface<string>;
 }) => {
   return (
-    <Style.ConponentContainer
+    <Style.ComponentContainer
       onClick={() => {
         if (platformComponent.link)
           window.open(platformComponent.link, "_blank");
@@ -31,7 +31,7 @@ const PlatformComponent = ({
           </li>
         ))}
       </Style.DescriptionsContainer>
-    </Style.ConponentContainer>
+    </Style.ComponentContainer>
   );
 };
 

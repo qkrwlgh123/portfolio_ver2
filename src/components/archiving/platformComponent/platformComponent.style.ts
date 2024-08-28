@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-const ConponentContainer = styled.div`
+const ComponentContainer = styled.div`
   width: 350px;
-  height: 350px;
+  height: 320px;
 
   padding: 2rem;
 
@@ -31,6 +31,15 @@ const ConponentContainer = styled.div`
   }
 `;
 
+const LongComponentContainer = styled(ComponentContainer)`
+  width: 764px;
+
+  @media (max-width: 1199px) {
+    width: 100%;
+    max-width: 500px;
+  }
+`;
+
 const ImageBox = styled.div<{ $isVelogImage: boolean }>`
   width: 14rem;
   height: 75px;
@@ -47,6 +56,9 @@ const ImageBox = styled.div<{ $isVelogImage: boolean }>`
 
 const LinkTextBox = styled.div`
   margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
 `;
 
 const SubtitleBox = styled.div`
@@ -66,7 +78,8 @@ const DescriptionsContainer = styled.ul`
 `;
 
 export default {
-  ConponentContainer,
+  ComponentContainer,
+  LongComponentContainer,
   ImageBox,
   LinkTextBox,
   SubtitleBox,
