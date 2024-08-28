@@ -1,46 +1,93 @@
-# Getting Started with Create React App
+# 🗒 Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br/>
 
-## Available Scripts
+[![license](https://img.shields.io/badge/License-GPL-red)](https://en.wikipedia.org/wiki/GNU_General_Public_License)
+[![code](https://img.shields.io/badge/Code-Typescript-blue)](https://www.typescriptlang.org/)
+[![Framework](https://img.shields.io/badge/Framework-React-orange)](https://react.dev/)
+[![member](https://img.shields.io/badge/Project-Personal-brightgreen)](https://github.com/qkrwlgh123)
 
-In the project directory, you can run:
+<br/>
 
-### `npm start`
+<img src="https://github.com/user-attachments/assets/c2100b00-046a-458a-beae-19f5be7c6bc6" alt="Image Description" width="800"/>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<br/>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 📖 Description
 
-### `npm test`
+개인 이력 및 프로젝트 경험을 정리하여 웹으로 구현한 프로젝트입니다.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<br/>
 
-### `npm run build`
+## 💻 Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Develop Mode
 
-### `npm run eject`
+```
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Production
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+npm run build
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<br/>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## 🔧 Stack
 
-## Learn More
+- **Language**: TypeScript
+- **Library & Framework** : React.js, Styled-component, framer-motion
+- **Deploy**: AWS S3, Cloudfront, Github-actions
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<br/>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## :open_file_folder: Project Structure
+
+```markdown
+.github
+├── workflows
+public
+src
+├── asset
+│   ├── image
+├── components
+├── data
+├── styles
+│   ├── layout
+│   ├── fonts
+├── types
+├── App.tsx
+├── index.tsx
+package.json
+```
+
+<br/>
+
+## 🔨 Architecture
+
+<img src="https://github.com/user-attachments/assets/22e0b225-5a10-4c0b-8998-d551bdb7fb9c" alt="Image Description" width="1000"/>
+
+<br/>
+
+## ⚒ CI/CD
+
+- github actions를 활용해서 지속적 통합 및 배포
+- `main`로 변경 사항 커밋이 push되면, CI / CD trigger
+- package.json의 의존성 리스트에 기반하여 npm 모듈 설치
+- 프로젝트 빌드
+- 빌드 완료 후, AWS내 S3 버킷에 빌드된 프로젝트 업로드
+- Cloudfront에 변경사항을 반영하기 위해, Invalidation을 통해 캐시 무효화 요청
+
+<br/>
+
+## 👨‍👩‍👧‍👦 Developer
+
+- **박지호** ([qkrwlgh123](https://github.com/qkrwlgh123))
