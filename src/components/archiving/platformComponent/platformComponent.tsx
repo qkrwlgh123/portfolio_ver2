@@ -27,7 +27,7 @@ const PlatformComponent = ({
       <Style.DescriptionsContainer>
         {platformComponent.description?.map((sentence: string) => (
           <li key={sentence}>
-            <span>{sentence}</span>
+            <span dangerouslySetInnerHTML={{ __html: sentence }} />
           </li>
         ))}
       </Style.DescriptionsContainer>

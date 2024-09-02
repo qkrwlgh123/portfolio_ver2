@@ -5,7 +5,7 @@ const ProjectDescriptons = ({ descriptions }: { descriptions: string[] }) => {
     <Style.DescriptionsContainer>
       {descriptions.map((description) => (
         <div key={description}>
-          <p>{description}</p>
+          <p dangerouslySetInnerHTML={{ __html: description }} />
         </div>
       ))}
     </Style.DescriptionsContainer>

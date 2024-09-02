@@ -17,7 +17,7 @@ const ContributionComponent = ({
       <Style.DescriptionsContainer>
         {contribution.descriptions.map((description) => (
           <li key={description}>
-            <span>{description}</span>
+            <span dangerouslySetInnerHTML={{ __html: description }} />
           </li>
         ))}
       </Style.DescriptionsContainer>

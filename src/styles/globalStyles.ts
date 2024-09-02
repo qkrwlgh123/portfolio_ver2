@@ -36,6 +36,10 @@ const GlobalStyle = createGlobalStyle`
         background: transparent;
         cursor: pointer;
     }
+
+    b {
+        font-weight: 700;
+    }
 `;
 
 export default GlobalStyle;

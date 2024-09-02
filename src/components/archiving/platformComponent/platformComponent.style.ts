@@ -73,6 +73,8 @@ const DescriptionsContainer = styled.ul`
   gap: 0.5rem;
   margin: 1em 0;
 
+  line-height: 1.3;
+
   word-wrap: break-word;
   overflow-wrap: break-word;
 `;
