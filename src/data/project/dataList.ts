@@ -9,6 +9,13 @@ import KindDariyImage_3 from "../../asset/image/project/kindDiary/kindDairyImage
 import KindDariyImage_4 from "../../asset/image/project/kindDiary/kindDairyImage_4.png";
 import KindDariyImage_5 from "../../asset/image/project/kindDiary/kindDairyImage_5.png";
 
+import RoastingLandmarkImage_1 from "../../asset/image/project/roastingLandmark/roastingLandmark_1.png";
+import RoastingLandmarkImage_2 from "../../asset/image/project/roastingLandmark/roastingLandmark_2.png";
+import RoastingLandmarkImage_3 from "../../asset/image/project/roastingLandmark/roastingLandmark_3.png";
+import RoastingLandmarkImage_4 from "../../asset/image/project/roastingLandmark/roastingLandmark_4.png";
+import RoastingLandmarkImage_5 from "../../asset/image/project/roastingLandmark/roastingLandmark_5.png";
+import RoastingLandmarkImage_6 from "../../asset/image/project/roastingLandmark/roastingLandmark_6.png";
+
 import StarterValleyImage_1 from "../../asset/image/project/starterValley/StarterValleyImage_1.png";
 import StarterValleyImage_2 from "../../asset/image/project/starterValley/StarterValleyImage_2.png";
 import StarterValleyImage_3 from "../../asset/image/project/starterValley/StarterValleyImage_3.png";
@@ -105,7 +112,14 @@ export const dataList = [
   {
     title: "로스팅 랜드마크",
     date: "2023.08 ~ 2023.10 (개인 프로젝트)",
-    imageList: [],
+    imageList: [
+      RoastingLandmarkImage_1,
+      RoastingLandmarkImage_2,
+      RoastingLandmarkImage_3,
+      RoastingLandmarkImage_4,
+      RoastingLandmarkImage_5,
+      RoastingLandmarkImage_6,
+    ],
     descriptions: [
       "소상공인을 위한 <b>키워드 기반 카페 홍보 플랫폼을 개발</b>하였습니다.\n\n카페의 특징이 <b>키워드에 담겨 홍보</b>된다면, 소비자는 <b>키워드를 통해 카페의 특징을 직관적으로 파악</b>할 수 있게 되고, 점주도 <b>카페의 특장점을 어필하며 홍보</b>하는 것이 가능할 것이라는 생각이 들었습니다. 이에 따라 <b>카페 점주 및 소비자 모두에게 이점</b>을 가져다줄 수 있을 것이라는 생각이 들어 해당 프로젝트를 기획하고 개발하게 되었습니다.",
       "<b>위치 기반 조회 기능 개발을 위해 반경 거리를 계산</b>하는 로직을 작성 중, 오차를 최소화하기 위해 구의 형태를 띈 지구의 모양을 고려한 <b>하버사인(Haversine)</b> 공식을 도입하였으며, 이를 통해 <b>정확한 거리값을 산출</b>해낼 수 있었습니다.",
