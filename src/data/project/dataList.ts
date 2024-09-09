@@ -91,7 +91,7 @@ export const dataList = [
         },
         {
           text: "Github(Frontend)",
-          link: "https://github.com/qkrwlgh123/kind_dairy",
+          link: "https://github.com/qkrwlgh123/kind_diary",
         },
         {
           text: "Github(Backend)",
