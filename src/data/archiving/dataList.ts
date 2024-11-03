@@ -30,11 +30,11 @@ export const longDataList = [
     link: [
       {
         link: "https://therapeutic-iridium-a60.notion.site/5d4cc7a33f7843f48c77072ae0b1f039?pvs=25",
-        text: "카인드 다이어리 프로젝트 중, 달성률 안내 팝업 기획안",
+        text: "캘린더 기반 일정 관리 플랫폼 개발 중 작성했던 달성률 안내 팝업 기획안",
       },
       {
         link: "https://therapeutic-iridium-a60.notion.site/React-query-API-d7458219729547ebadcdcc6190919535?pvs=25",
-        text: "카인드 다이어리 프로젝트 중, Tanstack query 도입 및 리팩토링 계획안",
+        text: "캘린더 기반 일정 관리 플랫폼 개발 중 작성했던 Tanstack query 도입 및 리팩토링 계획안",
       },
       {
         link: "https://therapeutic-iridium-a60.notion.site/2024-05-25-ca8565f82b924841b986df0621f82c2d?pvs=4",
@@ -42,15 +42,15 @@ export const longDataList = [
       },
       {
         link: "https://therapeutic-iridium-a60.notion.site/PPT-cdb764426ef84c51b2f8af1512a3c6fb?pvs=74",
-        text: "웅진씽크빅 재직 당시, 스마트올 중학 및 통합 웹 뷰어 관련 발표 자료",
+        text: "(주) 웅진씽크빅 재직 당시, 교육 컨텐츠 통합 웹 뷰어 및 중학 교육 플랫폼 업무 진행 발표 자료",
       },
       {
         link: "https://therapeutic-iridium-a60.notion.site/Zip-viewer-25af5a692c9c48a59e8f3ac5f988749a",
-        text: "(주) 북틀 재직 당시, 웹 뷰어 내 Core 모듈 추상화 발표 자료",
+        text: "(주) 북틀 재직 당시, 도서 컨텐츠 웹 뷰어 내 기능 모듈 분리를 통한 추상화 진행 발표 자료",
       },
       {
         link: "https://therapeutic-iridium-a60.notion.site/ZIP-NPM-be6c88d82f9e42cc99deb5177589e92e",
-        text: "(주) 북틀 재직 당시, 웹 뷰어 내 Core 모듈 NPM 라이브러리화 발표 자료",
+        text: "(주) 북틀 재직 당시, 도서 컨텐츠 웹 뷰어 내 기능 모듈 NPM 라이브러리화 진행 발표 자료",
       },
     ],
     subtitle:
