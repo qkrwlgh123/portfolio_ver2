@@ -1,7 +1,30 @@
 import WJTBLogo from "../../asset/image/career/logo_thinkbig.png";
 import BookswageLogo from "../../asset/image/career/logo_bookswage.png";
+import InusLogo from "../../asset/image/career/logo_inus.png";
 
 export const dataList = [
+  {
+    image: InusLogo,
+    title: "(주) 이너스 커뮤니티",
+    date: "2024.12 ~ 2025.04",
+    descriptions: [
+      "<b>마케팅 및 광고 대행을 전문으로 하는 기업</b>으로, <b>유진투자증권 캠페인 웹 플랫폼 개발</b> 외주 프로젝트와 함께, 헤이포즈·팬커머스 등의 <b>프로모션 페이지 제작</b> 및 <b>자사 플랫폼 운영</b>을 담당했습니다.",
+      "프리랜서 프론트엔드 개발자 (<b>IT팀 내 1인</b>)로 참여하여, 브랜드 캠페인 웹 개발 외주 프로젝트는 물론 <b>자사 플랫폼 개선 및 유지보수</b>, <b>회원 유입 통계 기능 개발</b>, <b>인플루언서 AI 분석 데이터 조회 플랫폼 구축</b> 등 다양한 업무를 수행했습니다.",
+    ],
+    contributionList: [
+      {
+        name: "도서 컨텐츠 웹 뷰어 React 기술 스택 전환",
+        date: "2024.04 ~ 2024.06",
+        descriptions: [
+          "기존 ES5로 개발된 웹 COMIC 뷰어 <b>React로 기술 스택 전환</b> 진행",
+          "이후 하나의 모듈로 구성되어있던 뷰어 기능 모듈 역할별 분리를 통한 추상화",
+          "추상화된 각 모듈들을 Webpack을 활용하여 번들링 및 NPM 라이브러리화하여 <b>프로젝트 경량화 및 재사용성 증진</b>",
+          "현재 페이지, 목차 리스트와 같이 <b>동적으로 변하는 데이터를 React의 가상 DOM 활용을 위해 useState로 변경</b>",
+          "웹 뷰어가 리엑트 라이프 사이클 내 동작하도록 변경하여 <b>성능 최적화</b>",
+        ],
+      },
+    ],
+  },
   {
     image: BookswageLogo,
     title: "(주) 북틀",
