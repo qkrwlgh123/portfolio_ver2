@@ -38,7 +38,7 @@ export const dataList = [
       "React 기반 스크롤 위치에 따른 애니메이션을 구현하기 위한 <b>React-animation-on-scrolling 라이브러리를 개발</b>하였습니다.",
       "소규모 번들 사이즈의 라이브러리를 사용하여 스크롤 애니메이션을 간편하게 구현할 수 있도록 하기 위해 개발하게 되었습니다.",
       "번들 사이즈 최적화를 위한 Tree shaking이 탑재된 Rollup을 활용하여 번들링하였으며, Terser를 도입하여 <b>번들 사이즈를 기존 2.76KB -> 1.11KB로 감소</b>하였습니다.",
-      "현재까지 <b>NPM 다운로드 수 총 460회를 기록</b>하였으며, 라이브러리를 지속적으로 홍보하고 개선해나가는 중입니다.",
+      "현재까지 <b>NPM 다운로드 수 총 591회를 기록</b>하였으며, 라이브러리를 지속적으로 홍보하고 개선해나가는 중입니다.",
       "",
     ],
     stackInfos: {
@@ -119,10 +119,6 @@ export const dataList = [
       ],
       URLs: [
         {
-          text: "배포 링크",
-          link: "https://diary.kindparks.com",
-        },
-        {
           text: "Github(Frontend)",
           link: "https://github.com/qkrwlgh123/kind_diary",
         },
@@ -165,10 +161,6 @@ export const dataList = [
         "평점 및 리뷰 작성",
       ],
       URLs: [
-        {
-          text: "배포 링크",
-          link: "https://roasting.kindparks.com",
-        },
         {
           text: "Github(Frontend)",
           link: "https://github.com/qkrwlgh123/roasting-landmark-front",
